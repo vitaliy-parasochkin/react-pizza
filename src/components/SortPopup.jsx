@@ -71,7 +71,7 @@ export default function SortPopup() {
             fill="#2C2C2C"
           />
         </svg>
-        <b>Сортування за:</b>
+        <b>Сортування за: </b>
         <span onClick={() => setIsOpen(!isOpen)}>{sortType.name}</span>
       </div>
       {isOpen && (
