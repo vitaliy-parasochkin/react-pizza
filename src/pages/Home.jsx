@@ -105,11 +105,7 @@ function Home() {
         <div className="content__items">
           {status === "loading"
             ? [...new Array(10)].map((_, i) => <Skeleton key={i} />)
-            : pizzas.map((item, i) => (
-                <Link key={i} to={`/pizzas/${item.id}`}>
-                  <PizzaBlock {...item} />
-                </Link>
-              ))}
+            : pizzas.map((item, i) => <PizzaBlock key={i} {...item} />)}
         </div>
       )}
 
